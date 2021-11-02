@@ -9,9 +9,6 @@ class GamesController < ApplicationController
         user_serialized = URI.open(url).read
         user = JSON.parse(user_serialized)
         @user_input =  user["found"]
-
-        
-
     end
 
     def new

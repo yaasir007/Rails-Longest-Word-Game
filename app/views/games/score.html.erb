@@ -1,4 +1,7 @@
 <h1>Results</h1>
 
-<h2><%= @user_input%></h2>
-
+        <% if @user_input %>
+          <%=  "Congratulation, #{@word} is an English Valid Word" %>
+       <% else %>
+          <%=  "Sorry, #{@word} does not seem to be an English Valid Word" %>
+       <% end %>
